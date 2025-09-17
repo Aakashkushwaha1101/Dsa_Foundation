@@ -1,4 +1,4 @@
-package DSA_Prep;
+package DSA_Prep.Hashing;
 
 import java.util.Arrays;
 
@@ -12,7 +12,7 @@ public class Hashing {
         int maxValue= Arrays.stream(numberSearch).max().getAsInt();
 //      System.out.println(" maxValue : " + Arrays.stream(numberSearch).max().getAsInt());
 
-        int[] hashSize=new int[maxValue];
+        int[] hashSize=new int[maxValue+1];
         for (int i=0 ;i<hash.length;i++){
             hashSize[hash[i]] ++;             // prestoring
         }
