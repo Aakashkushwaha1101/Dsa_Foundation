@@ -6,8 +6,10 @@ public class LargestNum {
         // but complexity in worst case O(nlogn)<-sorting * n <-- traverse for compare with max
         int [] arr={3,2,6,8,9,11,45,32,1,5,2};
         int [] result=maximum(arr);
+
         System.out.println(" largest is ;"+ result[0] );
         System.out.println(" secondlargest is;"+ result[1]);
+
 
     }
     // optimal solution using one looop time complexity is O(n)
