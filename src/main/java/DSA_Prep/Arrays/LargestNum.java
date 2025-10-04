@@ -16,15 +16,13 @@ public class LargestNum {
     static int[] maximum(int[] arr){
         int max=arr[0];   // largest element
         int secondlarge=-1; //secondlargest element
-        for(int i=0; i<arr.length; i++){
-            if(max<arr[i]) {
-                secondlarge=max;
-                max = arr[i];
+        for (int j : arr)
+            if (max < j) {
+                secondlarge = max;
+                max = j;
+            } else if (j < max && secondlarge < j) {
+                secondlarge = j;
             }
-            else if(arr[i]<max && secondlarge<arr[i]){
-                secondlarge=arr[i];
-            }
-        }
         // better approach time complexity O(n+n)=O(2n)
 //        int secondlarge=-1; //secondlargest element
 //        for(int i=0 ; i< arr.length; i++){

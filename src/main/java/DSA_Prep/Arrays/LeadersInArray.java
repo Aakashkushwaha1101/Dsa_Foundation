@@ -1,7 +1,7 @@
 package DSA_Prep.Arrays;
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 //question-Arrays optimal way
 // element add in leaders array where from the right of that element no element is greater than that;
 
